@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    /* padding: 20px; */
+    background-color: #f0f0f0;
+}
+
+form {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    max-width: 500px;
+    margin: auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+.div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form img {
+    height: 150px;
+    width: 150px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.form-group {
+    /* margin-bottom: 15px; */
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.form-group button {
+    width: 100%;
+    padding: 10px;
+    background-color: #207167;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.form-group button:hover {
+    background-color: #165049;
+}
+
+.cost-display {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 15px;
+        margin-top: 15px;
+    /* margin-top: 15px; */
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #207167;
+    margin-top: 50px;
+    font-family: 'Poppins';
+    width: 100%;
+}
+
+.footer .container .box-wrap {
+    width: 30%;
+    height: auto;
+    color: #ffffff;
+    /* font-size: 10px; */
+    font-family: 'Poppins';
+}
+
+.footer .box-wrap ul li {
+    list-style: none;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 60px;
+    flex-wrap: wrap;
+}
+
+.footer .box-wrap img {
+    width: 223.84px;
+    height: 223.84px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+    i {
+        padding: 4px;
+    }
+
+    p {
+        padding: 4px;
+    }
+}
+.payment-screenshot {
+    display: flex;
+    justify-content: space-between;
+}
+
+.payment-screenshot input {
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    width: 175px;
+}
+
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    padding: 20px;
+    width: 100%;
+    background-color: #fff;
+}
+
+.header .header-img {
+    /* padding: 20px; */
+    margin-left: 130px;
+}
+
+.header .header-img img {
+    height: 70px;
+}
+.outer-div {
+    display: flex;
+    justify-content: space-between;
+}
+.outer-div .location-dot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.outer-div .text {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    height: 70px;
+    margin-right: 130px;
+}
+.outer-div img {
+    height: 50px;
+    width: 50px;
+}
+
+.outer-div .location-dot {
+    height: 100%;
+}
+
+@media (max-width: 768px) {
+    .container {
+        /* flex-wrap: wrap; */
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .box-wrap {
+        width: 100%;
+    }
+
+    .container .box-wrap {
+        margin-top: 100px;
+        height: auto;
+    }
+
+    .footer .container .box-wrap {
+        width: 100%;
+    }
+
+    .text {
+        margin-right: 0;
+    }
+
+    .header .header-img {
+        margin-left: 0;
+    }
+
+}
+
+@media (max-width: 320px) {
+    .container {
+        /* flex-wrap: wrap; */
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        font-size: 0.75rem;
+        padding: 10;
+    }
+
+    .box-wrap {
+        width: 100%;
+    }
+
+    .outer-div .text {
+        margin-right: 0;
+    }
+
+    .header-img {
+        margin-left: 0;
+    }
+
+    .container .box-wrap {
+        margin-top: 100px;
+        height: auto;
+    }
+
+    a {
+        p {
+            font-size: 10px;
+            padding: 0;
+            width: 100%;
+        }
+
+        i {
+            padding: 0;
+        }
+    }
+}

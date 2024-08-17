@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumni Event Registration</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="header-img">
+            <img src="./header-image.png" alt="" />
+        </div>
+        <div class="outer-div">
+            <div class="location-dot">
+                <img src="./location-sign.svg" alt="">
+            </div>
+            <div class="text">
+                <span>IIIT Allahabad</span>
+                <span>Prayagraj - 211015 (UP) India</span>
+            </div>
+        </div>
+    </header>
+    <form id="alumniForm" action="index.php" method="POST" enctype="multipart/form-data">
+
+        <div class="div">
+            <img src="./sitelogo.jpg" alt="">
+        </div>
+        
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="year">Year of Passing Out:</label>
+            <input type="number" id="year" name="year" required>
+        </div>
+
+        <div class="form-group">
+            <label for="branch">Branch:</label>
+            <input type="text" id="branch" name="branch" required>
+        </div>
+<div class="form-group">
+            <label for="location">Location:</label>
+            <input type="text" id="branch" name="location" required>
+        </div>
+        <div class="form-group">
+            <label for="desgination">Current Company and Designation:</label>
+            <input type="text" id="branch" name="designation" required>
+        </div>
+        <div class="form-group">
+            <label for="numPeople">Number of People Attending (including yourself):</label>
+            <input type="number" id="numPeople" name="numPeople" required>
+        </div>
+
+        <div class="form-group">
+            <label for="numChildrenUnder5">Number of Children Below 5 Years Attending:</label>
+            <input type="number" id="numChildrenUnder5" name="numChildrenUnder5" required>
+        </div>
+
+        <div style="display: flex; justify-content: space-between; align-items: center">
+                <div class="cost-display">
+                <p id="cost">Total Cost: ₹0</p>
+            </div>
+            <div class="form-group">
+                
+                    <button>
+                        <a href="https://alumni.iiita.ac.in" target="_blank">
+                            Proceed to Payment
+                        </a>
+                    </button>
+
+            </div>
+        </div>
+        <div class="payment-screenshot">
+            <label for="paymentScreenshot">Upload Payment Screenshot:</label>
+            <input type="file" id="paymentScreenshot" name="paymentScreenshot" accept="image/*" required>
+        </div>
+        <div class="form-group" style="margin-top: 18px;">
+                <button type="submit">Register</button>
+            </div>
+
+        <p style="text-align: center;">Note: ₹1000 is refundable once you attend the event.</p>
+    </form>
+    <footer class="footer">
+        <div class="container">
+            <div class="box-wrap">
+            <div style="display: flex;">
+                <h1>ADD</h1><h1>RESS</h1>
+            </div>
+            <hr>
+            <p>
+                IIIT Allahabad, Devghat, Jhalwa
+                Prayagraj-211015 Uttar Pradesh, India
+            </p>
+            <div>
+                <a href="">
+                    <i class="fa-solid fa-phone"></i>
+                    <p>
+                        +9105322922599
+                    </p>
+                </a>
+            </div>
+     
+            <div>
+                <a href="">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>alumni.office@iiita.ac.in</p>
+                </a>
+            </div>
+     
+            <div>
+                <a href="">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>
+                        Office of Alumni Affairs Admin Extension-1
+                    </p>
+                </a>
+            </div>
+   
+        </div>
+        <div class="box-wrap">
+            <h1>
+                LINKS
+            </h1>
+            <hr>
+            <ul>
+                <li>
+                    <a href="https://alumni.iiita.ac.in">
+                        > IIITA Alumni Website
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="box-wrap">
+            <img src="./sitelogo.jpg" alt="">
+        </div>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+
+</body>
+</html>
